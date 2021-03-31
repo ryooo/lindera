@@ -30,3 +30,7 @@ tar = "0.4"
 tokio = { version = "0.2", features = ["full"] }
 
 lindera-ipadic-builder = { version = "0.7", path = "../lindera-ipadic-builder" }
+
+[profile.release]
+lto = true
+opt-level = "z"
